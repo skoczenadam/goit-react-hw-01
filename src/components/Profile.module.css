@@ -1,0 +1,10 @@
+.profile {
+  background-color: red;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lists {
+
+}
