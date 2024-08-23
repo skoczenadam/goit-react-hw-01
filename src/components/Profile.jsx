@@ -10,25 +10,25 @@ export const Profile = ({
 }) => {
   return (
     <div className={css.profile}>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+      <div className={css.info_container}>
+        <img className={css.img} src={image} alt="User avatar" />
+        <p className={css.name}>{name}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
       <ul className={css.lists}>
         <li>
           <span>Followers</span>
-          <span>{stats.followers}</span>
+          <span className={css.numbers}>{stats.followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={css.numbers}>{stats.views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={css.numbers}>{stats.likes}</span>
         </li>
       </ul>
     </div>
